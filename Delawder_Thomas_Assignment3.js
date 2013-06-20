@@ -5,16 +5,17 @@
 // Project 3
 
 
-
+var totalFeet = "square feet";
 
 // Object - Storage Unit A
 
-var storageUnit = {
+var movingTruck = {
     
-    "name": "Unit A",
-    "height": 10,
+    "name": "Truck A",
+    "height": 12,
     "length": 10,
     "width": 5,
+    
     "area": function(){      // Method Accessor
         
         var totalArea = this.height * this.length * this.width;
@@ -28,12 +29,14 @@ var storageUnit = {
         
     } // End Set Length
     
-} // End storageUnit object
+} // End movingTruck object
   
-var theArea = storageUnit.area();
+var theArea = movingTruck.area();
 
-console.log("The area of the unit is " + theArea);
+console.log("The area of the truck is " + theArea + " " + totalFeet);
 
-storageUnit.setLength(20);
+movingTruck.setLength(15);
 
-console.log("The new area is " + storageUnit.area());
+console.log("The new area is " + movingTruck.area() + " " + totalFeet);
+
+
