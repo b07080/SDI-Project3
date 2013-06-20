@@ -5,25 +5,48 @@
 // Project 3
 
 
+
 var json = {    // JSON Data
     
     "trucks": [ // Property Array
         
         {
-            "truckA": "15 foot truck"
+            "truck": "15 foot truck"
         },
         {
-            "truckB": "20 foot truck"
+            "truck": "20 foot truck"
         },
         {
-            "truckC": "25 foot truck"
+            "truck": "25 foot truck"
         }        
     ]
     
     
 }; // End JSON Data
 
+// Variables
+
+
+var truck1 = "Economy size";
+var truck2 = "Standard size";
+var truck3 = "Full size";
+
 var truckInfo = json;
+for (var key in truckInfo.trucks) {
+    if (truckInfo.trucks[key].truck == "15 foot truck") {
+        console.log(truck1);
+        
+    } if (truckInfo.trucks[key].truck == "20 foot truck") {
+        console.log(truck2);
+        
+        } if (truckInfo.trucks[key].truck == "25 foot truck") {
+        console.log(truck3);
+        
+        }
+        
+    //code
+}
+
 
 var totalFeet = "square feet";
 
