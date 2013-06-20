@@ -20,10 +20,10 @@ var movingTruck = {
         
         var totalArea = this.height * this.length * this.width;
         
-        return totalArea;        
+        return totalArea;   // Return Number     
         
     }, // End Area Method
-    "setLength": function(newLength) { // Method Mutator
+    "setLength": function(newLength) { // Method Procedure - does not return a value 
         
         this.length = newLength;
         
